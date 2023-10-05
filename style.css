@@ -151,7 +151,7 @@ span.tooltip {
 span.tooltip:hover,
 span.tooltip:focus {
   text-decoration: underline;
-  position: relative
+  position: relative;
   display: inline-block;
 }
 
