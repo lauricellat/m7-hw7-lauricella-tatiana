@@ -102,7 +102,8 @@ section.hero > button {
 section.hero {
   position: sticky;
   position: -webkit-sticky; /* Safari */
-  top: 0
+  top: 0;
+  z-index: 2
 }
 
 .p1::first-letter {
@@ -159,6 +160,8 @@ span.tooltip:focus {
 span.tooltip:hover > span,
 span.tooltip:focus > span {
   visibility: visible;
+  left: 50%;
+  margin-left: -75px;
 }
 
 /* styling for tooltip bubble */
@@ -166,11 +169,14 @@ span.tooltip span {
   visibility: hidden;
   position: absolute;
   z-index: 1;
-  left: 50%;
-  margin-left: -60px;
   background-color: black;
-  color: hotpink;
-  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 10px;
+  bottom:100%;
+  padding: 20px;
+  width: 150px;
   
 }
 
@@ -179,11 +185,10 @@ span.tooltip span::after {
   content: "";
   position: absolute;
   z-index: 1;
-  bottom: 100%;
+  top: 100%; 
   left: 50%;
-  margin-left: -60px;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent black transparent;
+  border-color: black transparent transparent transparent;
 }
